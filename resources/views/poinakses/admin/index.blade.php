@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <link rel="stylesheet" href="{{ asset('dashboard/navbar.css') }}">
+     <link rel="stylesheet" href="{{ asset('dashboard/Sidebar.css') }}">
      <link rel="stylesheet" href="{{ asset('dashboard/topbar.css') }}">
 </head>
 <body>
