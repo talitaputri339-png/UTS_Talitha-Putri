@@ -11,12 +11,12 @@ route::get('/sesi', [AuthController::class, 'index'])->name('auth');
 Route::post('/sesi', [AuthController::class, 'login'])->name('auth.login');
 
 Route::middleware(['auth', 'check_role:user'])->group(function () {
-    Route::get('/poinakses/user', [UserController::class, 'index'])
+    Route::get('/poinakses/user/dashboard', [UserController::class, 'index'])
         ->name('user');
 });
 
 Route::middleware(['auth', 'check_role:admin'])->group(function () {
-    Route::get('/poinakses/admin', [AdminController::class, 'index'])
+    Route::get('/poinakses/admin/dashboard', [AdminController::class, 'index'])
         ->name('admin');
 });
 

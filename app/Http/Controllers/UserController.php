@@ -8,7 +8,7 @@ class UserController extends Controller
 {
    function index()
     {
-        return view('poinakses/user/index');
+        return view('poinakses/user/dashboard/index');
     }
 
     
