@@ -3,7 +3,7 @@
 
 <aside class="sidebar" style="background-image: url('{{ url('/halaman_depan/images/background.jpeg') }}')"></aside>
 <div class="sidebar-logo">
-        <img src="{{ url('/halaman_depan/images/icons/logo_reece.ico') }}" alt="Logo">
+    <img src="{{ asset('halaman_depan/images/icons/logo_reece.ico') }}" class="logo" alt="Logo Reece Farms">
         
     </div>
 
