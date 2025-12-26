@@ -13,7 +13,7 @@
 
     <div class="left-side">
         <img src="{{ asset('halaman_depan/images/background.jpeg') }}" class="bg-image" alt="Background">
-        <img src="{{ asset('halaman_depan/images/icons/logo_reece.ico') }}" class="logo" alt="Logo Reece Farm">
+        <img src="{{ asset('halaman_depan/images/icons/logo_reece.png') }}" class="logo" alt="Logo Reece Farm">
     </div>
 
     <div class="right-side">

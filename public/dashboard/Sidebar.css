@@ -13,14 +13,35 @@
     position: fixed;
     left: 0;
     top: 0;
+    padding: 25px 20px;
+    color: #fff;
+
+    background-image: url('/images/farm-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* penting untuk overlay */
+    overflow: hidden;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
     background: linear-gradient(
         rgba(114, 192, 5, 0.8),
         rgba(8, 117, 68, 0.8)
-    ),
-    url('/images/farm-bg.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 25px 20px;
+    );
+
+    z-index: 0;
+}
+
+
+.sidebar > * {
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -28,6 +49,7 @@
     font-size: 22px;
     margin-bottom: 40px;
 }
+
 
 
 .menu {
@@ -54,10 +76,10 @@
 
 
 .logout {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
+    padding: 15px 0;
+    margin-top: 10px;
 }
+
 
 .logout button {
     background: none;
@@ -66,7 +88,6 @@
     font-size: 15px;
     cursor: pointer;
 }
-
 
 .topbar {
     position: fixed;
@@ -90,4 +111,22 @@
     padding: 30px;
     background: #f6f7fb;
     min-height: 100vh;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.brand-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
 }
